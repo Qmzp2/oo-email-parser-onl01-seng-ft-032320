@@ -12,7 +12,8 @@ def initialize(emails)
 end
 
 def parse
-  emails.split.map{|address| address.split(",").flatten.uniq}
-end
+  emails.split.map{|address| address.split(",")}
   
+end
+  .flatten.uniq
 end
