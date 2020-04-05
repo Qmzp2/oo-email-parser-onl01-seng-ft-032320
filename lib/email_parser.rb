@@ -15,7 +15,7 @@ class EmailAddressParser
     email_array = []
     email_array = @emails.split(/[,\s]/)
     email_array = email_array.reject { |e| e == ""}
-    email_array.uniq
+    email_array.flatten.uniq 
   end
 
 end
